@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pra ti bb <3</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #4b1f4f);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 650px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.11);
+      padding: 30px;
+      border-radius: 22px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+      backdrop-filter: blur(8px);
+      text-align: center;
+    }
+
+    .heart {
+      font-size: 42px;
+      margin-bottom: 10px;
+      animation: pulse 1.5s infinite;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      font-size: 17px;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+
+    .mensagem {
+      display: none;
+      margin-top: 25px;
+      text-align: left;
+      animation: aparecer 0.9s ease forwards;
+    }
+
+    .mensagem p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    button, a.botao-musica {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 13px 22px;
+      border: none;
+      border-radius: 25px;
+      background: #ff6b9d;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    button:hover, a.botao-musica:hover {
+      background: #ff4f8b;
+      transform: scale(1.03);
+    }
+
+    .assinatura {
+      text-align: center;
+      margin-top: 25px;
+      font-weight: bold;
+    }
+
+    @keyframes aparecer {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.12); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 24px 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .mensagem p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="heart">❤</div>
+
+    <h1>Oi xuxu!</h1>
+
+    <p class="intro">
+      Eu sei que talvez agora você não queira falar comigo...  
+      mas meio que precisava te mandar isto.
+    </p>
+
+    <button onclick="mostrarMensagem()">Clique aqui por gentileza</button>
+
+    <div class="mensagem" id="mensagem">
+      <p>
+        Amor, eu sei que agora talvez você não queira falar comigo, ou simplesmente não tenha o que dizer... e eu entendo isso.
+      </p>
+
+      <p>
+        Mas eu estava guardando essas palavras e não queria mais segurar. Até porque também não tive uma resposta sua, então fiquei nesse silêncio tentando respeitar seu espaço.
+      </p>
+
+      <p>
+        O que eu queria te dizer é simples: eu amo você. De verdade.
+      </p>
+
+      <p>
+        Eu sei que as circunstâncias não são as melhores, sei que talvez você não sinta da mesma forma... e está tudo bem. Eu não estou te escrevendo isso para te pressionar, nem esperando uma resposta imediata. Pode ser hoje, amanhã, daqui alguns dias... ou até demorar mais. Eu só precisava me expressar.
+      </p>
+
+      <p>
+        Eu quero que você saiba o quanto você é especial pra mim. O quanto eu gosto de te ver bem, feliz... o quanto o seu sorriso, sua risada e aquela sua gargalhada sincera mexem comigo de um jeito que eu nem sei explicar direito.
+      </p>
+
+      <p>
+        Eu sei que eu me expressei mal, me embolei e acabei passando algo totalmente diferente do que eu realmente sinto. E você tem todo o direito de estar chateada comigo por isso. Eu não estou invalidando nada do que você sentiu.
+      </p>
+
+      <p>
+        Se você quiser me ignorar, ou ignorar essa “boiolagem” que eu fiz usando um editor de texto e meu coração, eu vou entender também. Mas eu precisava te pedir desculpa de verdade, se eu te magoei.
+      </p>
+
+      <p>
+        Eu não fiquei bem com esse tempo sem a gente se falar. Não vou mentir... hoje eu olhei o celular várias vezes esperando uma mensagem sua. Mas, ao mesmo tempo, eu sabia que você precisava do seu tempo, e respeitei isso.
+      </p>
+
+      <p>
+        Só queria que você lembrasse que você é muito especial pra mim. Assim como o sol ilumina o dia... você ilumina as coisas pra mim também. Nem preciso falar mais nada, né? Você entendeu... eu espero kkk.
+      </p>
+
+      <p>
+        Enfim... eu amo você, princesa.
+      </p>
+
+      <p>
+        E vou cobrar você ainda por não ter me chamado pra ver o filme do Rusbé, viu? Você sabe que eu gosto pra caramba disso, boboca.
+      </p>
+
+      <p>
+        Se cuida, meu bem. Eu vou dormir agora... mas fico no aguardo de você, no seu tempo.
+      </p>
+
+      <p class="assinatura">
+        Com carinho,<br>
+       Seu Amor (Nick é o garaio) ❤
+      </p>
+
+      <div style="text-align: center;">
+        <a class="botao-musica" href="https://open.spotify.com/intl-pt/track/5XeFesFbtLpXzIVDNQP22n?si=7d828d3a77564783" target="_blank">
+          Toda vez que escuto esta música, me lembro de ti...
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
